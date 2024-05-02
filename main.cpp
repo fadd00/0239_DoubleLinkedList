@@ -17,10 +17,6 @@ void addNode(){
     cin>>newNode->noMhs; //Assign value to the data feild of new node
     cout<<"\nEnter the name of the student: ";
     cin>>newNode->name; // assign value to the data feild of new node
-
-    newNode->next = NULL;
-    newNode->prev = NULL;
-
 }
 
 
