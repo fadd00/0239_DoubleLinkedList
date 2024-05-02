@@ -2,8 +2,7 @@
 #include<string>
 using namespace std;
 
-struct Node
-{
+struct Node{
     int noMhs;
     string name;
     Node *next;
@@ -13,16 +12,17 @@ struct Node
 Node * START = NULL;
 
 void addNode(){
-    Node *newNode = new Node;
+    Node *newNode = new Node; //step 1: create a new node
     cout<<"\nEnter the roll number of students: ";
-    cin>>newNode->noMhs;
+    cin>>newNode->noMhs; //Assign value to the data feild of new node
     cout<<"\nEnter the name of the student: ";
-    cin>>newNode->name;
-    
+    cin>>newNode->name; // assign value to the data feild of new node
+
     newNode->next = NULL;
     newNode->prev = NULL;
 
 }
+
 
 int main(){
 
