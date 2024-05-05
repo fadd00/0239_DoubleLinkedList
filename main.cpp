@@ -173,5 +173,48 @@ void searchData(){
     }
 }
 int main(){
+    while (true)
+    {
+        try
+        {
+            cout << "\nMenu" << endl;
+            cout << "1. Add a record to the list" << endl;
+            cout << "2. Delete a record from the list" << endl;
+            cout << "3. view all record in the ascending order of roll number" << endl;
+            cout << "4. view all record in the descending order of roll number" << endl;
+            cout << "5. Search for a record in the list" << endl;
+            cout << "6. Exit" << endl;
+            cout << "Enter your choice : ";
+            char ch;
+            cin >> ch;
 
+            switch (ch)
+            {
+            case '1':
+                addNode;
+                break;
+            case '2':
+                deleteNode;
+                break;
+            case '3':
+                traverse;
+                break;
+            case '4':
+                revtravese;
+                break;
+            case '5':
+                searchData;
+                break;
+            case '6':
+                return 0;
+            default:
+                break;
+            }
+        }
+        catch(const exception& e)
+        {
+            cout << "Check for the value entered." << endl;
+        }
+        
+    }
 }
