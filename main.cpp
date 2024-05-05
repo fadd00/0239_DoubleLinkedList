@@ -3,7 +3,7 @@
 using namespace std;
 
 struct Node{
-    int noMhs;
+    int noMhs; 
     string name;
     Node *next;
     Node *prev;
@@ -34,6 +34,10 @@ void addNode(){
         }
         newNode->next = NULL; // step 5: make the new node point to null
         START = newNode; // step 6: make the new node the first node
+    } else {
+        // insert the new node in the midle or at the end
+        Node *current = START; // step 1.a : start from the first node
+
     }
 }
 
