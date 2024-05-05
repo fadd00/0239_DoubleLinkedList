@@ -72,6 +72,9 @@ bool search(int rollNo, Node **previous, Node **current)
     }
     return (*current != NULL);
 }
+void deletenode(){
+    
+}
 
 
 int main(){
