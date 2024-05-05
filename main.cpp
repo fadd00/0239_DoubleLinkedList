@@ -40,7 +40,7 @@ void addNode(){
         Node *previous = NULL; // step 1.b : previous node is NULL initially
     }while (current != NULL && current->noMhs < newNode->noMhs) // step 1.c traverse the list to find the correct position
         {
-            
+            previous = current; // step 1.d : move the previous to the current node
         }
 
 }
